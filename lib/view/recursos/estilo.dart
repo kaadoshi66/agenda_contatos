@@ -3,9 +3,13 @@ import 'package:flutter/material.dart';
 ThemeData estilo() {
   ThemeData base = ThemeData.dark();
   return base.copyWith(
-      primaryColor: Colors.grey.shade900,
-      colorScheme: const ColorScheme.dark(),
-      floatingActionButtonTheme: const FloatingActionButtonThemeData(
-        backgroundColor: Colors.orange,
-      ));
+    colorScheme: ColorScheme.dark(
+      brightness: Brightness.dark,
+      surface: Colors.lightBlue.shade900,
+      onSurface: Colors.white,
+    ),
+    floatingActionButtonTheme: FloatingActionButtonThemeData(
+      backgroundColor: Colors.lightBlueAccent[300],
+    ),
+  );
 }

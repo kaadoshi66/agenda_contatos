@@ -1,6 +1,6 @@
-import 'package:agenda_contatos/view/recursos/estilo.dart';
 import 'package:flutter/material.dart';
 import 'view/home_page.dart';
+import 'view/recursos/estilo.dart';
 
 void main() => runApp(
       MaterialApp(

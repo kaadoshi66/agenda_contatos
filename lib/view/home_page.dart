@@ -1,22 +1,24 @@
+import 'package:agenda_contatos/view/recursos/menu.dart';
 import 'package:flutter/material.dart';
+import 'recursos/barra_superior.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
 
   @override
-  State<Home> createState() => _HomeState();
+  State<Home> createState() => HomeState();
 }
 
-class _HomeState extends State<Home> {
+class HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-        //Titulo do app
-        //   appBar: ,
-        // //menu
-        //   drawer: ,
-        // //Corpo do App
-        // body: ,
-        );
+    return Scaffold(
+      //Titulo do app
+      appBar: BarraSuperior(),
+      // //menu
+      drawer: MenuDrawer(),
+      // //Corpo do App
+      // body: ,
+    );
   }
 }
