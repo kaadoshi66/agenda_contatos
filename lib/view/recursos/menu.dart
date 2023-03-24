@@ -1,3 +1,4 @@
+import 'package:agenda_contatos/view/recursos/buscar_page.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -70,7 +71,7 @@ class MenuDrawer extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => const Home(), //Buscar de contatos
+                  builder: (context) => const Busca(), //Buscar de contatos
                 ),
               );
             },
