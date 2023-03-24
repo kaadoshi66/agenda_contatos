@@ -75,6 +75,25 @@ class MenuDrawer extends StatelessWidget {
               );
             },
           ),
+          //!perfil
+          ListTile(
+            title: mostrarTitulo("Perfil"),
+            subtitle: const Text("Editar informações"),
+            trailing: const FaIcon(FontAwesomeIcons.chevronRight),
+            leading: FaIcon(
+              FontAwesomeIcons.idCard,
+              color: Colors.teal.shade200,
+              size: 32,
+            ),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const Home(), //Buscar de contatos
+                ),
+              );
+            },
+          ),
           //!Configuraçôes
           ListTile(
             title: mostrarTitulo("Configurações"),
@@ -86,12 +105,7 @@ class MenuDrawer extends StatelessWidget {
               size: 32,
             ),
             onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const Home(), //Buscar de Configurações
-                ),
-              );
+              //
             },
           ),
           //!Logout
@@ -105,12 +119,7 @@ class MenuDrawer extends StatelessWidget {
               size: 32,
             ),
             onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const Home(),
-                ),
-              );
+              //
             },
           ),
         ],
