@@ -1,12 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+import '../home_page.dart';
+
 class MenuDrawer extends StatelessWidget {
   const MenuDrawer({super.key});
   //Dados vindo ddo banco de Dados(Simulação)
   final String user = "Igor Souza";
   final String email = "test@teste.com.br";
   final String fotoPerfil = "img/perfil.png";
+  Text mostrarTitulo(String texto) {
+    return Text(
+      texto,
+      style: const TextStyle(
+        fontSize: 18,
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -24,23 +34,47 @@ class MenuDrawer extends StatelessWidget {
               ),
             ),
           ),
-          //home
+          //!Home
           ListTile(
-            title: const Text("Home"),
+            title: mostrarTitulo("Home"),
             subtitle: const Text("Página inicial"),
             trailing: const FaIcon(
-              FontAwesomeIcons.circleChevronRight,
+              FontAwesomeIcons.chevronRight,
             ),
-            leading: const FaIcon(
+            leading: FaIcon(
               FontAwesomeIcons.houseChimney,
+              color: Colors.orange.shade400,
+              size: 32,
             ),
+            //navegação
             onTap: () {
-              //navegação
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const Home(),
+                ),
+              );
             },
           ),
-
           //Contato
-
+          ListTile(
+            title: mostrarTitulo("Contatos"),
+            subtitle: const Text("Gerenciar contatos"),
+            trailing: const FaIcon(FontAwesomeIcons.chevronRight),
+            leading: FaIcon(
+              FontAwesomeIcons.addressBook,
+              color: Colors.orange.shade400,
+              size: 32,
+            ),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const Home(), //Buscar de contatos
+                ),
+              );
+            },
+          ),
           //Configuraçôes
 
           //Logout

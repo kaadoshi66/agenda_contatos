@@ -16,7 +16,7 @@ class HomeState extends State<Home> {
       //Titulo do app
       appBar: BarraSuperior(),
       // //menu
-      drawer: MenuDrawer(),
+      drawer: const MenuDrawer(),
       // //Corpo do App
       // body: ,
     );
