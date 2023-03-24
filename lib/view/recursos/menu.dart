@@ -56,14 +56,14 @@ class MenuDrawer extends StatelessWidget {
               );
             },
           ),
-          //Contato
+          //!Contato
           ListTile(
             title: mostrarTitulo("Contatos"),
             subtitle: const Text("Gerenciar contatos"),
             trailing: const FaIcon(FontAwesomeIcons.chevronRight),
             leading: FaIcon(
               FontAwesomeIcons.addressBook,
-              color: Colors.orange.shade400,
+              color: Colors.lightBlue.shade400,
               size: 32,
             ),
             onTap: () {
@@ -75,9 +75,44 @@ class MenuDrawer extends StatelessWidget {
               );
             },
           ),
-          //Configuraçôes
-
-          //Logout
+          //!Configuraçôes
+          ListTile(
+            title: mostrarTitulo("Configurações"),
+            subtitle: const Text("Configurações do sistema"),
+            trailing: const FaIcon(FontAwesomeIcons.chevronRight),
+            leading: FaIcon(
+              FontAwesomeIcons.gear,
+              color: Colors.blueGrey.shade400,
+              size: 32,
+            ),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const Home(), //Buscar de Configurações
+                ),
+              );
+            },
+          ),
+          //!Logout
+          ListTile(
+            title: mostrarTitulo("Logout"),
+            subtitle: const Text("Sair"),
+            trailing: const FaIcon(FontAwesomeIcons.chevronRight),
+            leading: FaIcon(
+              FontAwesomeIcons.rightFromBracket,
+              color: Colors.red.shade400,
+              size: 32,
+            ),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const Home(),
+                ),
+              );
+            },
+          ),
         ],
       ),
     );
