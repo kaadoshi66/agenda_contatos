@@ -7,7 +7,7 @@ ThemeData estilo() {
       brightness: Brightness.dark,
       surface: Colors.lightBlue.shade900,
       onSurface: Colors.white,
-      primary: Colors.grey.shade900,
+      primary: Colors.lightBlue.shade800,
     ),
     floatingActionButtonTheme: FloatingActionButtonThemeData(
       backgroundColor: Colors.lightBlueAccent[300],
