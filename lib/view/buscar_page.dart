@@ -1,4 +1,4 @@
-import '../../model/contato.dart';
+import '../model/contato.dart';
 import 'package:agenda_contatos/model/contato_service.dart';
 import 'package:agenda_contatos/view/recursos/barra_superior.dart';
 import 'package:agenda_contatos/view/recursos/menu.dart';
