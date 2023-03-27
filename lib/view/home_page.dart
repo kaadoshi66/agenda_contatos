@@ -49,9 +49,9 @@ class HomeState extends State<Home> {
                         child: Container(
                           width: 300,
                           padding: const EdgeInsets.all(16),
-                          child: Row(
+                          child: const Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: const [
+                            children: [
                               FaIcon(
                                 FontAwesomeIcons.magnifyingGlass,
                                 color: Colors.white,
@@ -89,9 +89,9 @@ class HomeState extends State<Home> {
                         child: Container(
                           width: 300,
                           padding: const EdgeInsets.all(16),
-                          child: Row(
+                          child: const Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: const [
+                            children: [
                               FaIcon(
                                 FontAwesomeIcons.plus,
                                 color: Colors.white,
