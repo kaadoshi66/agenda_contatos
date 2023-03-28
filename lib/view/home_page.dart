@@ -1,4 +1,5 @@
 import 'package:agenda_contatos/view/buscar_page.dart';
+import 'package:agenda_contatos/view/cadastro_page.dart';
 import 'package:agenda_contatos/view/recursos/menu.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -108,7 +109,12 @@ class HomeState extends State<Home> {
                           ),
                         ),
                         onPressed: () {
-                          //!Buscar
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => Cadastro(),
+                            ),
+                          );
                         },
                       );
                     },

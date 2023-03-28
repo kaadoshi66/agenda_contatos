@@ -1,5 +1,5 @@
+import 'package:agenda_contatos/view/cadastro_page.dart';
 import 'package:agenda_contatos/view/perfil_page.dart';
-
 import '../model/contato.dart';
 import 'package:agenda_contatos/model/contato_service.dart';
 import 'package:agenda_contatos/view/recursos/barra_superior.dart';
@@ -86,10 +86,17 @@ class BuscaState extends State<Busca> {
           );
         },
       ),
-      //!Botão Flutuante
+      //!Botão Flutuante(Cadastro)
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.orange.shade600,
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => Cadastro(),
+            ),
+          );
+        },
         child: const FaIcon(
           FontAwesomeIcons.plus,
           color: Colors.white,
