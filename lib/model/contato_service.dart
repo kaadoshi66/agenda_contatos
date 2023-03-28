@@ -5,7 +5,7 @@ class ContatoService {
     //cria a lista de contatos
     List<Contato> contatos = [
       Contato(
-        id: 1,
+        id: 0,
         nome: "Stephanie",
         sobrenome: "Schulze",
         email: "kat.dwnt@gmail.com",
@@ -13,7 +13,7 @@ class ContatoService {
         foto: "img/fotos/foto1.jpg",
       ),
       Contato(
-        id: 2,
+        id: 1,
         nome: "Rachel",
         sobrenome: "Muravyova",
         email: "RachelMuravyova@rhyta.com",
@@ -21,7 +21,7 @@ class ContatoService {
         foto: "img/fotos/foto2.jpg",
       ),
       Contato(
-        id: 3,
+        id: 2,
         nome: "Etoile",
         sobrenome: "Gaudreau",
         email: "EtoileGaudreau@rhyta.com",
@@ -29,7 +29,7 @@ class ContatoService {
         foto: "img/fotos/foto3.jpg",
       ),
       Contato(
-        id: 4,
+        id: 3,
         nome: "Katrin",
         sobrenome: "Reinhard",
         email: "strum78charli@gmail.com",
@@ -37,7 +37,7 @@ class ContatoService {
         foto: "img/fotos/foto4.jpg",
       ),
       Contato(
-        id: 5,
+        id: 4,
         nome: "Dai",
         sobrenome: "Tsui",
         email: "ablee@gmail.com",
@@ -45,7 +45,7 @@ class ContatoService {
         foto: "img/fotos/foto5.jpg",
       ),
       Contato(
-        id: 6,
+        id: 5,
         nome: "Hua",
         sobrenome: "Tsui",
         email: "laylee@gmail.com",
@@ -53,7 +53,7 @@ class ContatoService {
         foto: "img/fotos/foto6.jpg",
       ),
       Contato(
-        id: 7,
+        id: 6,
         nome: "Drago",
         sobrenome: "Jozić",
         email: "ablee@gmail.com",
@@ -61,7 +61,7 @@ class ContatoService {
         foto: "img/fotos/foto7.jpg",
       ),
       Contato(
-        id: 8,
+        id: 7,
         nome: "Iwan",
         sobrenome: "Nowicki",
         email: "ablee@gmail.com",

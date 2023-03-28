@@ -1,3 +1,5 @@
+import 'package:agenda_contatos/view/perfil_page.dart';
+
 import '../model/contato.dart';
 import 'package:agenda_contatos/model/contato_service.dart';
 import 'package:agenda_contatos/view/recursos/barra_superior.dart';
@@ -69,7 +71,16 @@ class BuscaState extends State<Busca> {
                   color: Colors.white,
                   size: 32,
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Perfil(
+                        id: contato.id,
+                      ),
+                    ),
+                  );
+                },
               ),
             ),
           );
@@ -77,6 +88,7 @@ class BuscaState extends State<Busca> {
       ),
       //!Botão Flutuante
       floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.orange.shade600,
         onPressed: () {},
         child: const FaIcon(
           FontAwesomeIcons.plus,
