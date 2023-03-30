@@ -10,7 +10,7 @@ class ContatoService {
   String cadastrarContato(Contato contato) {
     contatos.add(contato);
 
-    return "cadastrado com sucesso";
+    return "cadastrado com sucesso: ${contato.nome} ${contato.sobrenome}";
   }
   //!FIM do Método
 
