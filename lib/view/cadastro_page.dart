@@ -1,5 +1,6 @@
 import 'package:agenda_contatos/model/contato.dart';
 import 'package:agenda_contatos/model/contato_service.dart';
+import 'package:agenda_contatos/view/buscar_page.dart';
 import 'package:agenda_contatos/view/recursos/barra_superior.dart';
 import 'package:agenda_contatos/view/recursos/menu.dart';
 import 'package:flutter/material.dart';
@@ -151,8 +152,12 @@ class CadastroState extends State<Cadastro> {
 //Cadastrar
   void cadastrar() {
     ContatoService service = ContatoService();
+
+    //guarda o ultimo id Cadastrador
+    int ultimoID = service.listarContato().length;
+
     Contato contato = Contato(
-      id: 1,
+      id: ultimoID,
       nome: nome.text,
       sobrenome: sobrenome.text,
       email: email.text,
@@ -167,15 +172,25 @@ class CadastroState extends State<Cadastro> {
       SnackBar(
         content: Text(
           mensagem,
+          textAlign: TextAlign.center,
           style: TextStyle(
             color: Colors.grey.shade300,
           ),
         ),
-        // duration: ,
-        // behavior: ,
-        // backgroundColor: ,
+        duration: const Duration(milliseconds: 2000),
+        behavior: SnackBarBehavior.floating,
+        backgroundColor: Colors.grey.shade800,
       ),
     );
+    //! Redireciona para tela de busca
+    Future.delayed(const Duration(milliseconds: 2500), () {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => const Busca(),
+        ),
+      );
+    });
   }
 
 //Limpar campos
