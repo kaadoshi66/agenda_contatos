@@ -93,7 +93,7 @@ class BuscaState extends State<Busca> {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => Cadastro(),
+              builder: (context) => const Cadastro(),
             ),
           );
         },
